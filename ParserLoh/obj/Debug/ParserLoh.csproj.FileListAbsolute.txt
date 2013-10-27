@@ -1,0 +1,15 @@
+C:\Users\suvorovi\Documents\Visual Studio 2008\Projects\calc\ParserLoh\ParserLoh\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\suvorovi\Documents\Visual Studio 2008\Projects\calc\ParserLoh\ParserLoh\bin\Debug\ParserLoh.exe
+C:\Users\suvorovi\Documents\Visual Studio 2008\Projects\calc\ParserLoh\ParserLoh\bin\Debug\ParserLoh.pdb
+C:\Users\suvorovi\Documents\Visual Studio 2008\Projects\calc\ParserLoh\ParserLoh\obj\Debug\ParserLoh.exe
+C:\Users\suvorovi\Documents\Visual Studio 2008\Projects\calc\ParserLoh\ParserLoh\obj\Debug\ParserLoh.pdb
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\Parser_loh\ParserLoh\obj\Debug\ParserLoh.exe
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\Parser_loh\ParserLoh\obj\Debug\ParserLoh.pdb
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\Parser_loh\ParserLoh\bin\Debug\ParserLoh.exe
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\Parser_loh\ParserLoh\bin\Debug\ParserLoh.pdb
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\Parser_loh\ParserLoh\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\obj\Debug\ParserLoh.exe
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\obj\Debug\ParserLoh.pdb
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\bin\Debug\ParserLoh.exe
+C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\bin\Debug\ParserLoh.pdb
