@@ -26,7 +26,6 @@ namespace ParserLoh
                 PARTSOFNUMBERSET.Add((char)i);
             }
             PARTSOFNUMBERSET.Add('.');
-            PARTSOFNUMBERSET.Add((char)'-');
             for (int i = 65; i < 91; i++)
             { // ебаный же стыд, ведь можна как-нить через регулярки написать
                 PARTSOFVARIABLESET.Add((char)i);

@@ -23,28 +23,16 @@ namespace ParserLoh
 
         public void InsertSpaces()
         {
-            bool specMinusFlag = false;
             //InputString = InputString.Replace(" ",string.Empty);
             for (int i = 0; i < InputString.Length; i++)
             {
                 if ((ac.PARTSOFNUMBERSET.Contains(InputString[i])) | (ac.PARTSOFVARIABLESET.Contains(InputString[i])))
                 {
-                    if ((ac.PARTSOFSTATEMENTS.Contains(InputString[i])) && (specMinusFlag == true))
-                    {
-                        OutputString += " " + InputString[i] + " ";
-                        specMinusFlag = false;
-                    }
-                    else
-                    {
-                        OutputString += InputString[i];
-                        specMinusFlag = true;
-                    }
-                    continue;
+                    OutputString += InputString[i]; 
                 }
                 if (ac.PARTSOFSTATEMENTS.Contains(InputString[i]))
                 {
-                    OutputString += " " + InputString[i] + " ";
-                    specMinusFlag = false;
+                    OutputString += " " + InputString[i] + " "; 
                 }
                 if (InputString[i] == ' ') { OutputString += " "; }
                 if (!((ac.PARTSOFNUMBERSET.Contains(InputString[i]))|
