@@ -6,26 +6,20 @@ using System.Text;
 
 namespace ParserLoh
 {
-    /*
-     *сделать возможность введения унарных операций DONE (изменен интерфейс - в качестве параметра ArrayList, добавлена арность - проверяется при вычислении
-     *                                                  на основании ее заполняется массив для  интерфейса)
-     *переделать подчистую алгоритм парсинга (SpaceInserter)
-     *реализовать поддержку отрицательных чисел
-     *как-то дописать про операции, входящие в алфавит переменных DONE
-    */
 
     class Program
     {
         static void Main(string[] args)
         {
-            StringLikeArray sla = new StringLikeArray();
+            //StringLikeArray sla = new StringLikeArray();
             Console.WriteLine("Введите формулу:");
-            SpaceInserter si = new SpaceInserter(Console.ReadLine());
-            si.InsertSpaces();
-            ShuntingYard sy = new ShuntingYard(si.GetOutputString());
+            //SpaceInserter si = new SpaceInserter(Console.ReadLine());
+            //si.InsertSpaces();
+            ShuntingYard sy = new ShuntingYard(Console.ReadLine());//si.GetOutputString());
             sy.StringAnalys();
             Console.WriteLine("Обратная польская запись:");
             Console.WriteLine(sy.ReturnReversePolish());
+            Console.ReadLine();
             ReversePolish rp = new ReversePolish(sy.ReturnReversePolish());
             if (!rp.VariableCollect())
             {

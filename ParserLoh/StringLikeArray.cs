@@ -21,7 +21,22 @@ namespace ParserLoh
                     tokenStart = i + 1;
                 }
             }
-            return arrList;
+            return UnaryMinusReplace(arrList);
+        }
+
+        public ArrayList UnaryMinusReplace(ArrayList ar)
+        {
+            AlphabetConst ac = new AlphabetConst();
+            if ((string)ar[0] == "-") ar[0] = "~";
+            for (int i = 1; i < ar.Count; i++)
+            {
+                if (ar[i]=="-") 
+                {
+                    Statement stat = ac.IsStatement((string)ar[i-1]);
+                    if ((stat!=null)&&stat.symbol!=")") ar[i] = "~";
+                }
+            }
+            return ar;
         }
     }
 }

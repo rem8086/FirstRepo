@@ -29,7 +29,7 @@ namespace ParserLoh
         public ArrayList VariableSet;   // массив переменных
         ArrayList tokenArray;           //массив всех кусков формулы (числа, переменные, операторы)
         Stack<double> polishStack;      //вспомогательный стек алгоритма
-        AlphabetConst ac;               //алфавит заного определяется зачем-то
+        AlphabetConst ac;               
 
         public ReversePolish(string str)
         {
@@ -43,7 +43,7 @@ namespace ParserLoh
         }
 
         public bool VariableCollect()      //по алфавиту вычленяются переменные из формулы
-        {                                  //ага, а значения им потом когда захотят присвоят 
+        {                                
             for (int i = 0; i < tokenArray.Count; i++)
             {
                 if (ac.IsVariable((string)tokenArray[i]))
@@ -64,9 +64,9 @@ namespace ParserLoh
             return VariableSet.Count != 0 ? true: false;
         }
 
-        public void Calculate ()    //сам алгоритм. тут хреново как проверяется чем является лексема
-        {                           //(число, переменная или оператор) ну и жеско на бинарные операции забито
-            for (int i = 0; i < tokenArray.Count; i++) // не, тут норм уже все - все траблы вынесены в другие места
+        public void Calculate ()    //сам алгоритм
+        {                           
+            for (int i = 0; i < tokenArray.Count; i++) 
             {
                 string token = (string)(tokenArray[i]);
 
@@ -75,7 +75,8 @@ namespace ParserLoh
                     if (token == var.var) { polishStack.Push(var.value); }
                 }
 
-                if (ac.IsNumber(token)) { polishStack.Push(Convert.ToDouble(token)); }
+                if (ac.IsNumber(token)) { polishStack.Push(Convert.ToDouble(token));
+                }
 
                 Statement statement = ac.IsStatement(token);
                 if (statement != null)

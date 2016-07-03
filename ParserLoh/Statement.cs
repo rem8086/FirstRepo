@@ -7,7 +7,7 @@ namespace ParserLoh
 {
     public enum StateType { isOpen, isClose, isStatementLeft, isStatementRight }; //скобки либо оператор
     
-    /*бессмысленный класс в который сохраняется информация
+    /*класс в который сохраняется информация
      * по операторам
      * чтобы и приоритет можно было задать и прописать что
      * за действие будет выполняться при встрече этого символа*/
@@ -16,7 +16,7 @@ namespace ParserLoh
     {
         
         public int priority;    //приоритет оператора
-        public string symbol;     //оператор (заменил с чара на стринг, чтобы на будущее всякую тригонометрию захерачить)
+        public string symbol;    
         public StateType st;    
         public IOperation operationType;    // какое действие будет выполнять оператор
 

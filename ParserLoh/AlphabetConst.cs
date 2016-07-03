@@ -8,9 +8,7 @@ namespace ParserLoh
 {
     /* класс, реализующий алфавит программы
      * указываются символы чисел, символы переменных, символы операторов
-     * 
-     * символы операторов хранятся не как чары,
-     * что жестко затрудняет парсинг этих символов*/
+    */
 
     class AlphabetConst
     {
@@ -22,17 +20,17 @@ namespace ParserLoh
         public AlphabetConst()
         {
             for (int i = 48; i < 58; i++)
-            { // нахуй так писать
+            {
                 PARTSOFNUMBERSET.Add((char)i);
             }
-            PARTSOFNUMBERSET.Add('.');
+            PARTSOFNUMBERSET.Add(System.Globalization.CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator[0]);
             PARTSOFNUMBERSET.Add((char)'-');
             for (int i = 65; i < 91; i++)
-            { // ебаный же стыд, ведь можна как-нить через регулярки написать
+            { 
                 PARTSOFVARIABLESET.Add((char)i);
             }
             for (int i = 97; i < 123; i++)
-            { // в глаз ебать за такое
+            { 
                 PARTSOFVARIABLESET.Add((char)i);
             }
             PARTSOFSTATEMENTS.Add((char)'+');
@@ -59,6 +57,8 @@ namespace ParserLoh
                 sinus.operationType = new OperationSinus(); STATEMENTSSET.Add(sinus);
             Statement cosinus = new Statement("cos", 3, StateType.isStatementRight);
                 cosinus.operationType = new OperationCosinus(); STATEMENTSSET.Add(cosinus);
+            Statement unaryminus = new Statement("~", 3, StateType.isStatementRight);
+                unaryminus.operationType = new OperationUnaryMinus(); STATEMENTSSET.Add(unaryminus);
             Statement openBracket = new Statement("(", 0, StateType.isOpen); STATEMENTSSET.Add(openBracket);
             Statement closeBracket = new Statement(")", 0, StateType.isClose); STATEMENTSSET.Add(closeBracket);
         }

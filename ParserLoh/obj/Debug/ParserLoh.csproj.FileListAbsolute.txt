@@ -13,8 +13,8 @@ C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\obj\D
 C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\bin\Debug\ParserLoh.exe
 C:\Users\s.suvorov\Documents\Visual Studio 2008\Projects\parser2\ParserLoh\bin\Debug\ParserLoh.pdb
-C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\obj\Debug\ParserLoh.exe
 C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\obj\Debug\ParserLoh.pdb
-C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\bin\Debug\ParserLoh.exe
 C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\bin\Debug\ParserLoh.pdb
 C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\obj\Debug\ParserLoh.csprojResolveAssemblyReference.cache
+C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\bin\Debug\ParserLoh.exe
+C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\obj\Debug\ParserLoh.exe

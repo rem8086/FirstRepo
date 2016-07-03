@@ -6,7 +6,7 @@ using System.Text;
 namespace ParserLoh
 {
     /*
-     * класс ставит пробелы между лексемами, чтобы удобней анализировать было - полностью переделывать на строку
+     * класс ставит пробелы между лексемами, чтобы удобней анализировать было 
      */
 
     class SpaceInserter
@@ -25,6 +25,7 @@ namespace ParserLoh
         {
             bool specMinusFlag = false;
             //InputString = InputString.Replace(" ",string.Empty);
+            InputString = DecimalSeparatorReplace(InputString);
             for (int i = 0; i < InputString.Length; i++)
             {
                 if ((ac.PARTSOFNUMBERSET.Contains(InputString[i])) | (ac.PARTSOFVARIABLESET.Contains(InputString[i])))
@@ -52,14 +53,26 @@ namespace ParserLoh
                     (ac.PARTSOFSTATEMENTS.Contains(InputString[i]))| InputString[i]==' '))
                 { OutputString = ""; return; }
             }
-            OutputString = OutputString.Replace("   ", " "); // это пиздец голимый
-            OutputString = OutputString.Replace("  ", " "); // это пиздец голимый
+            OutputString = OutputString.Replace("   ", " "); 
+            OutputString = OutputString.Replace("  ", " "); 
             OutputString = OutputString.Trim();
         }
 
         public string GetOutputString()
         {
             return OutputString;
+        }
+
+        string DecimalSeparatorReplace(string str) // замена разделителя на обрабатываемый Convert.ToDecimal()
+        {
+            char decimalSeparator = System.Globalization.CultureInfo.CurrentCulture.NumberFormat.CurrencyDecimalSeparator[0];
+            if (decimalSeparator == '.')
+            {
+                return str.Replace(',', decimalSeparator);
+            } else
+            {
+                return str.Replace('.', decimalSeparator);
+            }
         }
 
 

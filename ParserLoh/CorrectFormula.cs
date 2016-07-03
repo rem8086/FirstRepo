@@ -6,9 +6,6 @@ using System.Text;
 namespace ParserLoh
 {
     /*проверяет введенную формулу
-     * на то, что она действительно формула, а не чушь кака-то
-     * 
-     * нахрена тут переменная объявлена
      */
 
     class CorrectFormula
@@ -22,7 +19,7 @@ namespace ParserLoh
 
         public bool IsCorrect()
         {
-            return true; // похуй, все корректно
+            return true; 
         }
     }
 }
