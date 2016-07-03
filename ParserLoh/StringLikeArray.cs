@@ -4,7 +4,7 @@ using System.Collections;
 using System.Linq;
 using System.Text;
 
-namespace ParserLoh
+namespace Parser
 {
     class StringLikeArray // класс содержит функцию, разбивающую строку на элементы по пробелам
     {

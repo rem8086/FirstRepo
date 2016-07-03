@@ -1,0 +1,4 @@
+C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\bin\Debug\ParserLoh.exe
+C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\bin\Debug\ParserLoh.pdb
+C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\obj\Debug\ParserLoh.exe
+C:\Users\suvorov.s\Documents\GitHub\localFirst\ParserLoh\obj\Debug\ParserLoh.pdb

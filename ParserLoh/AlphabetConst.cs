@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using ParserLoh.Operations;
+using Parser.Operations;
 
-namespace ParserLoh
+namespace Parser
 {
     /* класс, реализующий алфавит программы
      * указываются символы чисел, символы переменных, символы операторов

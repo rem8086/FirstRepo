@@ -4,7 +4,7 @@ using System.Collections;
 using System.Linq;
 using System.Text;
 
-namespace ParserLoh.Operations
+namespace Parser.Operations
 {
     class OperationCosinus: IOperation
     {
